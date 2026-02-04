@@ -33,45 +33,45 @@ This project focuses on operating system deployment, system preparation, BIOS/UE
 <h2>Program walk-through:</h2>
 
 <p align="center">
-<b>Launch Microsoft Azure on Host PC:</b> <br/>
-<img width="1890" height="891" alt="image" src="https://github.com/user-attachments/assets/c121975f-02bb-4b29-b535-eb6954e7646d" />
+<b>Navigate to the official Microsoft website and download the Windows 11 ISO installation file:</b> <br/>
+<img width="1908" height="895" alt="image" src="https://github.com/user-attachments/assets/8d8a84af-9362-40b8-9846-bf27d423b79f" />
 <br />
 <br />
-<b>Create Resource Group:</b>  <br/>
-<img width="874" height="456" alt="image" src="https://github.com/user-attachments/assets/3473a336-8a7c-4551-a376-370a65805f26" />
+<b>Create a new virtual machine, I used VMware. Configure the virtual machine hardware settings, including memory allocation, storage size, and processor configuration based on recommended Windows 11 system requirements:</b>  <br/>
+<img width="1440" height="745" alt="image" src="https://github.com/user-attachments/assets/9f34b486-40cd-4194-8a83-5d030681f46b" />
 <br />
 <br />
-<b>Create a Virtual Network:</b>  <br/>
-<img width="813" height="718" alt="image" src="https://github.com/user-attachments/assets/75520e3a-0329-41c5-81fb-b9801abe98fe" />
+<b>Select and mount the previously downloaded Windows 11 ISO file as the boot installation media for the virtual machine:</b>  <br/>
+<img width="1435" height="746" alt="image" src="https://github.com/user-attachments/assets/2c17f1f4-b5e1-4950-8183-78ed4f0fb6fb" />
 <br />
 <br />
-<b>Create Virtual Machine:</b>  <br/>
-<img width="757" height="598" alt="image" src="https://github.com/user-attachments/assets/0281dfb7-f114-4845-8bfd-b8529105d411" />
-<img width="954" height="751" alt="image" src="https://github.com/user-attachments/assets/d45a950f-27f2-463e-97aa-f90ac9c487e2" />
+<b>Enable virtual disk encryption during virtual machine setup and create a secure password to protect the virtual machine storage:</b>  <br/>
+<img width="1439" height="745" alt="image" src="https://github.com/user-attachments/assets/9dbfe17b-76a0-493f-b1b6-c021c5d904b1" />
 <br />
 <br />
-<b>Configure VM Settings:</b>  <br/>
-<img width="1144" height="782" alt="image" src="https://github.com/user-attachments/assets/018e6bf2-a506-44a5-b4dc-735057448013" />
+<b>Start the virtual machine and allow the Windows Setup installation prompt to load:</b>  <br/>
+<img width="1002" height="677" alt="image" src="https://github.com/user-attachments/assets/05de788e-647c-4e33-bbca-1943fcdb02e6" />
 <br />
 <br />
-<b>Set Up VM Username and PW:</b>  <br/>
-<img width="804" height="555" alt="image" src="https://github.com/user-attachments/assets/c4beafc0-e9bb-497d-9998-77d35dd43d1a" />
+<b>Choose the Windows 11 edition to install. For this deployment, Windows 11 Pro was selected:</b>  <br/>
+<img width="1015" height="757" alt="image" src="https://github.com/user-attachments/assets/5b37fe30-2585-46ed-bfb0-5851b79e835d" />
 <br />
 <br />
-<b>Create a New Network Security Group:</b>  <br/>
-<img width="800" height="702" alt="image" src="https://github.com/user-attachments/assets/50753420-4759-450e-b062-594cc7bc81d8" />
+<b>Allow the Windows installation process to finish loading and complete all remaining setup prompts, including system preferences and configuration settings:</b>  <br/>
+<img width="1691" height="887" alt="image" src="https://github.com/user-attachments/assets/c3280f8d-be17-4ff0-9fe3-23016eee66d9" />
+<img width="1020" height="763" alt="image" src="https://github.com/user-attachments/assets/e623e64e-ee5f-470a-b7ed-2bcf5cd5c320" />
 <br />
 <br />
-<b>Allow Anyone To Ping the VM:</b>  <br/>
-<img width="1901" height="860" alt="image" src="https://github.com/user-attachments/assets/b15841ad-5a56-4caa-9e99-e2e9f2cbb4f6" />
+<b>Create and configure a user account with administrative privileges to manage the system and domain environment:</b>  <br/>
+<img width="1020" height="765" alt="image" src="https://github.com/user-attachments/assets/b1925ad7-4620-4f2d-902c-6ddbf6df9520" />
 <br />
 <br />
-<b>Disable the Windows Firewall on VM so it can be pinged publicly:</b>  <br/>
-<img width="1084" height="799" alt="image" src="https://github.com/user-attachments/assets/87543762-4ace-424f-a79a-c299159b7fb0" />
+<b>Validate that Windows 11 deployment completed successfully by confirming desktop accessibility, account authentication, and overall system stability:</b>  <br/>
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/9d1bed36-d729-4192-9098-2680f89c14a1" />
 <br />
 <br />
-<b>Ping VM Using Host PC to make sure it is reachable over the public internet:</b>  <br/>
-<img width="647" height="305" alt="image" src="https://github.com/user-attachments/assets/04cca0e2-bf48-4f3b-9c78-14560eebe3cc" />
+<b>Check for and install the latest Windows updates to ensure the system is secure, stable, and operating with the most current features and security patches:</b>  <br/>
+<img width="712" height="551" alt="image" src="https://github.com/user-attachments/assets/a2caf0ee-497f-4a69-8956-d18a33e5c675" />
 <br />
 <br />
 <b>Open Event Viewer to view Windows processes on VM:</b>  <br/>
