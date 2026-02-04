@@ -19,7 +19,7 @@ This project focuses on operating system deployment, system preparation, BIOS/UE
 <h2>Environments Used </h2>
 
 - <b>(Host) Windows 11 Pro </b>(23H2)
-- <b>Virtual Machine Platform: VMware / VirtualBox / Hyper-V</b>
+- <b>Virtual Machine Platform: VMware</b>
 
 <h2>Key Takeaways 📝</h2>
 
